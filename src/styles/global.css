@@ -1,0 +1,100 @@
+:root {
+  --color-navy-950: #06152b;
+  --color-navy-900: #0a1f3d;
+  --color-navy-800: #10294f;
+  --color-navy-700: #193a6b;
+
+  --color-teal-700: #0b6b64;
+  --color-teal-600: #0f766e;
+  --color-teal-500: #14968b;
+  --color-teal-100: #d7f0ec;
+  --color-teal-50: #eef8f6;
+
+  --color-gold-500: #c9a057;
+  --color-gold-400: #dcb872;
+
+  --color-whatsapp: #12813f;
+  --color-whatsapp-dark: #0e6a34;
+
+  --color-bg: #f5f7fa;
+  --color-surface: #ffffff;
+  --color-text: #14233a;
+  --color-muted: #4a5a72;
+  --color-border: #dbe3ee;
+  --color-error: #b3261e;
+  --color-focus: var(--color-teal-700);
+
+  --font-body: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue',
+    Arial, sans-serif;
+  --font-heading: 'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua',
+    Georgia, serif;
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+
+  --shadow-sm: 0 1px 2px rgb(10 31 61 / 0.06), 0 4px 14px rgb(10 31 61 / 0.05);
+  --shadow-md: 0 18px 40px -18px rgb(10 31 61 / 0.35);
+
+  --container-width: 1160px;
+  --header-height: 4.5rem;
+  --space-section: clamp(4rem, 8vw, 6.5rem);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--color-text);
+  background: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+p {
+  overflow-wrap: break-word;
+}
+
+svg {
+  display: block;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 3px;
+}
+
+/* Destinos de navegação (main e seções): contorno interno, sem vazar da tela. */
+[tabindex='-1']:focus {
+  outline: none;
+}
+
+[tabindex='-1']:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: -3px;
+}
+
+::selection {
+  background: var(--color-teal-100);
+  color: var(--color-navy-900);
+}

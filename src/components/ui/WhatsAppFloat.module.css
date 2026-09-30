@@ -1,0 +1,79 @@
+.float {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 60;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  min-width: 3.5rem;
+  min-height: 3.5rem;
+  justify-content: center;
+  padding: 0 1.1rem;
+  border-radius: 999px;
+  background: var(--color-whatsapp);
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 14px 30px -10px rgb(6 21 43 / 0.55);
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease,
+    opacity 0.2s ease,
+    visibility 0s;
+}
+
+.float:hover {
+  background: var(--color-whatsapp-dark);
+  transform: translateY(-2px);
+}
+
+/* visibility: hidden também remove o botão da ordem de tabulação e dos leitores de tela. */
+.hidden,
+.hidden:hover {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(1rem);
+  pointer-events: none;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease,
+    visibility 0s linear 0.2s;
+}
+
+/* Visível apenas para leitores de tela em telas pequenas. */
+.label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+@media (min-width: 640px) {
+  .float {
+    right: 1.75rem;
+    bottom: 1.75rem;
+  }
+
+  .label {
+    position: static;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    clip-path: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .float,
+  .hidden {
+    transition: none;
+  }
+
+  .float:hover,
+  .hidden {
+    transform: none;
+  }
+}

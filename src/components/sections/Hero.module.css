@@ -1,0 +1,127 @@
+.hero {
+  --color-focus: var(--color-gold-400);
+
+  scroll-margin-top: var(--header-height);
+  position: relative;
+  overflow: hidden;
+  padding-block: clamp(3.5rem, 8vw, 6.5rem);
+  background:
+    radial-gradient(50rem 28rem at 85% 0%, rgb(20 150 139 / 0.28), transparent 60%),
+    radial-gradient(40rem 24rem at 0% 100%, rgb(201 160 87 / 0.12), transparent 60%),
+    linear-gradient(160deg, var(--color-navy-950), var(--color-navy-800));
+  color: #dbe4f0;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgb(255 255 255 / 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(255 255 255 / 0.04) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: linear-gradient(to bottom, #000, transparent 85%);
+  -webkit-mask-image: linear-gradient(to bottom, #000, transparent 85%);
+  pointer-events: none;
+}
+
+.inner {
+  position: relative;
+  display: grid;
+  align-items: center;
+  gap: clamp(2.5rem, 6vw, 4rem);
+}
+
+.content {
+  animation: rise 0.7s ease both;
+}
+
+.eyebrow {
+  display: inline-block;
+  margin: 0 0 1.25rem;
+  padding: 0.4rem 0.95rem;
+  border: 1px solid rgb(220 184 114 / 0.45);
+  border-radius: 999px;
+  color: var(--color-gold-400);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.title {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(2.2rem, 5.5vw, 3.6rem);
+  line-height: 1.1;
+  color: #fff;
+}
+
+.highlight {
+  color: var(--color-gold-400);
+  font-style: italic;
+}
+
+.description {
+  max-width: 36rem;
+  margin: 1.5rem 0 0;
+  font-size: clamp(1.02rem, 2vw, 1.2rem);
+  color: #b9c7da;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-top: 2rem;
+}
+
+.highlights {
+  display: grid;
+  gap: 0.6rem;
+  margin: 2rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.highlightItem {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.98rem;
+}
+
+.highlightIcon {
+  flex-shrink: 0;
+  color: var(--color-gold-400);
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (min-width: 960px) {
+  .inner {
+    grid-template-columns: 1.15fr 0.85fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .actions > * {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .content {
+    animation: none;
+  }
+}

@@ -1,0 +1,110 @@
+.layout {
+  display: grid;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.text p {
+  margin: 0 0 1.1rem;
+  font-size: 1.08rem;
+  color: var(--color-muted);
+}
+
+.pillars {
+  display: grid;
+  gap: 0.8rem;
+  margin: 1.75rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pillar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 600;
+  color: var(--color-navy-900);
+}
+
+.pillarIcon {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  background: var(--color-teal-50);
+  color: var(--color-teal-700);
+}
+
+.process {
+  padding: clamp(1.5rem, 4vw, 2.25rem);
+  border-radius: var(--radius-lg);
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+}
+
+.processTitle {
+  margin: 0 0 1.5rem;
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  color: var(--color-navy-900);
+}
+
+.steps {
+  display: grid;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.step {
+  position: relative;
+  display: flex;
+  gap: 1rem;
+}
+
+.step:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 2.6rem;
+  bottom: -1.3rem;
+  left: 1.2rem;
+  width: 2px;
+  background: var(--color-border);
+}
+
+.stepNumber {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  background: var(--color-navy-800);
+  color: #fff;
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
+
+.stepTitle {
+  margin: 0.15rem 0 0.25rem;
+  font-size: 1.05rem;
+  color: var(--color-navy-900);
+}
+
+.stepDescription {
+  margin: 0;
+  font-size: 0.96rem;
+  color: var(--color-muted);
+}
+
+@media (min-width: 960px) {
+  .layout {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+}

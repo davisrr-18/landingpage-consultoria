@@ -1,0 +1,45 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  color: var(--color-navy-900);
+  text-decoration: none;
+}
+
+.mark {
+  flex-shrink: 0;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.name {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.tagline {
+  margin-top: 0.15rem;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-teal-700);
+}
+
+.light {
+  color: #fff;
+}
+
+.light .tagline {
+  color: var(--color-gold-400);
+}
+
+.light .mark rect {
+  fill: rgb(255 255 255 / 0.12);
+}

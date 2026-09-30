@@ -1,0 +1,134 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 30rem;
+  margin-inline: auto;
+  padding-bottom: 1.5rem;
+}
+
+.panel {
+  padding: 1.5rem;
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  color: var(--color-text);
+  box-shadow: 0 30px 60px -25px rgb(0 0 0 / 0.6);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-navy-900);
+}
+
+.badge {
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+  background: var(--color-teal-50);
+  color: var(--color-teal-700);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.chart {
+  width: 100%;
+  height: 7rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.bar {
+  fill: var(--color-teal-100);
+}
+
+.barAccent {
+  fill: var(--color-teal-600);
+}
+
+.list {
+  display: grid;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.7rem 0.85rem;
+  border-radius: var(--radius-md);
+  background: var(--color-bg);
+  font-size: 0.92rem;
+}
+
+.check {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 50%;
+  background: var(--color-teal-600);
+  color: #fff;
+}
+
+.itemLabel {
+  flex: 1;
+  font-weight: 600;
+  color: var(--color-navy-900);
+}
+
+.status {
+  font-size: 0.8rem;
+  color: var(--color-muted);
+  text-align: right;
+}
+
+.chip {
+  position: absolute;
+  right: -0.5rem;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0.8rem 1.1rem;
+  border-radius: var(--radius-md);
+  background: var(--color-gold-400);
+  color: var(--color-navy-950);
+  box-shadow: 0 16px 30px -14px rgb(0 0 0 / 0.55);
+  line-height: 1.3;
+}
+
+.chipLabel {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.chipValue {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+@media (max-width: 420px) {
+  .status {
+    display: none;
+  }
+
+  .chip {
+    right: 0;
+  }
+}

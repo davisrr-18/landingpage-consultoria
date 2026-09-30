@@ -1,0 +1,60 @@
+.region:empty {
+  display: none;
+}
+
+.box {
+  margin: 0;
+  padding: 0.95rem 1.1rem;
+  border-radius: var(--radius-md);
+  border: 1px solid transparent;
+  font-size: 0.95rem;
+}
+
+.error {
+  background: #fdf0ef;
+  border-color: #f0b9b5;
+  color: #8a1c15;
+  font-weight: 600;
+}
+
+.demo {
+  background: #fff8e8;
+  border-color: #ecd49b;
+  color: #5c4310;
+}
+
+.demo p {
+  margin: 0;
+}
+
+.strong {
+  font-weight: 700;
+}
+
+.previewLabel {
+  margin-top: 0.75rem !important;
+  font-size: 0.86rem;
+}
+
+.preview {
+  margin: 0.4rem 0 0;
+  padding: 0.85rem;
+  border-radius: var(--radius-sm);
+  background: rgb(255 255 255 / 0.75);
+  color: var(--color-text);
+  font: inherit;
+  font-size: 0.9rem;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.success {
+  background: #eaf7ef;
+  border-color: #a9d9bb;
+  color: #0d4d27;
+}
+
+.success a {
+  color: inherit;
+  font-weight: 700;
+}
