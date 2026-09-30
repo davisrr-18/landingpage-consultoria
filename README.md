@@ -1,4 +1,4 @@
-# Vértice Fiscal - landing page de consultoria fiscal
+# Landing page de consultoria fiscal
 
 [![CI e deploy no GitHub Pages](https://github.com/davisrr-18/landingpage-consultoria-fiscal/actions/workflows/deploy.yml/badge.svg)](https://github.com/davisrr-18/landingpage-consultoria-fiscal/actions/workflows/deploy.yml)
 
