@@ -13,7 +13,7 @@ export const siteConfig = {
   isDemo: true,
 
   /** Endereço público do site, com barra final. Usado nas tags de compartilhamento. */
-  url: 'https://davisrr-18.github.io/landingpage-consultoria-fiscal/',
+  url: 'https://davisrr-18.github.io/landingpage-consultoria/',
   shareImage: {
     /** Caminho relativo à pasta public/. Tamanho recomendado: 1200x630. */
     path: 'og-image.png',

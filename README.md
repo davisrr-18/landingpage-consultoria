@@ -1,13 +1,13 @@
 # Landing Page de consultoria fiscal
 
-[![CI e deploy no GitHub Pages](https://github.com/davisrr-18/landingpage-consultoria-fiscal/actions/workflows/deploy.yml/badge.svg)](https://github.com/davisrr-18/landingpage-consultoria-fiscal/actions/workflows/deploy.yml)
+[![CI e deploy no GitHub Pages](https://github.com/davisrr-18/landingpage-consultoria/actions/workflows/deploy.yml/badge.svg)](https://github.com/davisrr-18/landingpage-consultoria/actions/workflows/deploy.yml)
 
-[![Capa da landing page Vértice Fiscal](public/og-image.png)](https://davisrr-18.github.io/landingpage-consultoria-fiscal/)
+[![Capa da landing page Vértice Fiscal](public/og-image.png)](https://davisrr-18.github.io/landingpage-consultoria/)
 
 Landing page demonstrativa (empresa fictícia) feita com React, Vite e CSS Modules.
 Apresenta serviços de consultoria fiscal e direciona o visitante ao atendimento pelo WhatsApp.
 
-**Site publicado:** https://davisrr-18.github.io/landingpage-consultoria-fiscal/
+**Site publicado:** https://davisrr-18.github.io/landingpage-consultoria/
 
 > **Aviso:** todo o conteúdo (nome da empresa, textos e contatos) é fictício e serve apenas
 > para demonstração.
@@ -91,7 +91,7 @@ Como o GitHub Pages serve o site em `/<repositório>/`, o build usa a variável
 necessária e o site roda em `/`. Para simular o build de produção:
 
 ```bash
-VITE_BASE_PATH=/landingpage-consultoria-fiscal/ npm run build
+VITE_BASE_PATH=/landingpage-consultoria/ npm run build
 npm run preview
 ```
 
