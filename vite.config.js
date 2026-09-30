@@ -35,6 +35,8 @@ function siteMetadata() {
 
 // https://vite.dev/config/
 export default defineConfig({
+  // No GitHub Pages o site é servido em /<repositório>/; o workflow define VITE_BASE_PATH.
+  base: process.env.VITE_BASE_PATH ?? '/',
   plugins: [react(), siteMetadata()],
   test: {
     environment: 'node',
