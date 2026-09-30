@@ -16,9 +16,15 @@ function escapeHtml(value) {
 
 /** Preenche os metadados do index.html a partir de src/config/site.js. */
 function siteMetadata() {
+  const { url, shareImage } = siteConfig
   const values = {
     SITE_TITLE: `${siteConfig.name} | ${siteConfig.tagline}`,
     SITE_DESCRIPTION: siteConfig.description,
+    SITE_URL: url,
+    SITE_IMAGE: new URL(shareImage.path, url).href,
+    SITE_IMAGE_WIDTH: shareImage.width,
+    SITE_IMAGE_HEIGHT: shareImage.height,
+    SITE_IMAGE_ALT: shareImage.alt,
   }
 
   return {

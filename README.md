@@ -2,6 +2,8 @@
 
 [![CI e deploy no GitHub Pages](https://github.com/davisrr-18/landingpage-consultoria-fiscal/actions/workflows/deploy.yml/badge.svg)](https://github.com/davisrr-18/landingpage-consultoria-fiscal/actions/workflows/deploy.yml)
 
+[![Capa da landing page Vértice Fiscal](public/og-image.png)](https://davisrr-18.github.io/landingpage-consultoria-fiscal/)
+
 Landing page demonstrativa (empresa fictícia) feita com React, Vite e CSS Modules.
 Apresenta serviços de consultoria fiscal e direciona o visitante ao atendimento pelo WhatsApp.
 
@@ -37,8 +39,13 @@ npm run preview  # pré-visualiza o build
 ## Personalizar
 
 Todo o conteúdo editável está em `src/config/site.js`: nome, textos, serviços,
-diferenciais, navegação e dados de contato. O título e a descrição do `index.html` são
-preenchidos a partir de `siteConfig` durante o build.
+diferenciais, navegação e dados de contato. O título, a descrição e as tags de
+compartilhamento (Open Graph) do `index.html` são preenchidos a partir de `siteConfig`
+durante o build.
+
+Ao publicar em outro endereço, atualize `siteConfig.url`. A imagem de pré-visualização
+exibida ao compartilhar o link fica em `public/og-image.png` (1200x630) e é configurada
+em `siteConfig.shareImage`.
 
 ### Ativar o WhatsApp
 

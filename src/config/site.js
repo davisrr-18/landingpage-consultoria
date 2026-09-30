@@ -12,6 +12,16 @@ export const siteConfig = {
     'Consultoria fiscal e tributária com atendimento próximo, linguagem clara e primeiro contato direto pelo WhatsApp. Site demonstrativo de empresa fictícia.',
   isDemo: true,
 
+  /** Endereço público do site, com barra final. Usado nas tags de compartilhamento. */
+  url: 'https://davisrr-18.github.io/landingpage-consultoria-fiscal/',
+  shareImage: {
+    /** Caminho relativo à pasta public/. Tamanho recomendado: 1200x630. */
+    path: 'og-image.png',
+    width: 1200,
+    height: 630,
+    alt: 'Capa da landing page demonstrativa da Vértice Fiscal, consultoria fiscal e tributária.',
+  },
+
   whatsapp: {
     /**
      * Número no formato internacional E.164, com código do país e DDD
